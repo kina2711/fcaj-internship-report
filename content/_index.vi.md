@@ -29,4 +29,5 @@ chapter: false
 ### Nội dung báo cáo
 
 1. [Worklog](1-worklog/)
+2. [Events Participated](4-eventparticipated/)
 <!-- report-sections:end -->
