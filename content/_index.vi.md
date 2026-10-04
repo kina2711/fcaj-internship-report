@@ -26,6 +26,8 @@ chapter: false
 **Thời gian thực tập:** Từ ngày 28/09/2026
 
 <!-- report-sections:start -->
+<img src="/images/avatar.jpg" alt="Ảnh đại diện" width="220" style="border-radius:10px">
+
 ### Nội dung báo cáo
 
 1. [Worklog](1-worklog/)

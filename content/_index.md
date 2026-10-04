@@ -26,6 +26,8 @@ chapter: false
 **Internship Duration:** From 28/09/2026
 
 <!-- report-sections:start -->
+<img src="/images/avatar.jpg" alt="Profile picture" width="220" style="border-radius:10px">
+
 ### Report Content
 
 1. [Worklog](1-worklog/)
