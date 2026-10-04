@@ -7,23 +7,26 @@ chapter: false
 
 # Internship Report
 
-### Student Information
+### Student Information:
 
-&emsp; **Full Name:** Thái Trung Kiên (Thai Trung Kien)
+**Full Name:** Thai Trung Kien
 
-&emsp; **Phone Number:** 0945613721
+**Phone Number:** 0945613721
 
-&emsp; **Email:** kienthai2711@gmail.com
+**Email:** [kienthai2711@gmail.com](mailto:kienthai2711@gmail.com)
 
-&emsp; **University:** Hanoi University of Pharmacy
+**University:** Hanoi University of Pharmacy
 
-&emsp; **Major:** Pharmacy
+**Major:** Pharmacy
 
-&emsp; **Internship Company:** Amazon Web Services Vietnam Co., Ltd.
+**Internship Company:** Amazon Web Services Viet Nam Company Limited
 
-&emsp; **Internship Position:** FCJ Cloud Intern
+**Internship Position:** Workforce Bootcamp - First Cloud AI Journey
 
-&emsp; **Internship Duration:** From 26/09/2026 (ongoing)
+**Internship Duration:** From 28/09/2026
 
 <!-- report-sections:start -->
+### Report Content
+
+1. [Worklog](1-worklog/)
 <!-- report-sections:end -->

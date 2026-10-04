@@ -7,23 +7,26 @@ chapter: false
 
 # Báo cáo thực tập
 
-### Thông tin sinh viên
+### Thông tin sinh viên:
 
-&emsp; **Họ và tên:** Thái Trung Kiên
+**Họ và tên:** Thái Trung Kiên
 
-&emsp; **Số điện thoại:** 0945613721
+**Số điện thoại:** 0945613721
 
-&emsp; **Email:** kienthai2711@gmail.com
+**Email:** [kienthai2711@gmail.com](mailto:kienthai2711@gmail.com)
 
-&emsp; **Trường:** Trường Đại học Dược Hà Nội
+**Trường:** Trường Đại học Dược Hà Nội
 
-&emsp; **Ngành:** Dược học
+**Ngành:** Dược học
 
-&emsp; **Công ty thực tập:** Công ty TNHH Amazon Web Services Việt Nam
+**Công ty thực tập:** Công ty TNHH Amazon Web Services Viet Nam
 
-&emsp; **Vị trí thực tập:** FCJ Cloud Intern
+**Vị trí thực tập:** Workforce Bootcamp - First Cloud AI Journey
 
-&emsp; **Thời gian thực tập:** Từ 26/09/2026 (đang thực tập)
+**Thời gian thực tập:** Từ ngày 28/09/2026
 
 <!-- report-sections:start -->
+### Nội dung báo cáo
+
+1. [Worklog](1-worklog/)
 <!-- report-sections:end -->
