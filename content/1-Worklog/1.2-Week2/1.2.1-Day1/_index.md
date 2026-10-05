@@ -5,14 +5,18 @@ weight: 1
 chapter: false
 pre: " <b> 1.2.1. </b> "
 ---
+
 ### Objectives
+
 - Understand the rules of First Cloud AI Journey: state all 6 principles, the graduation requirement of 5 projects, the 6-month milestone, and be able to check against the 7-item checklist to complete before Module 1.
 - Foundation part of Module 1: distinguish Data Center, Availability Zone, Region, Edge Location, Local Zone; state the 3 ways to work with AWS (Management Console, AWS CLI, AWS SDK) and the credentials used by each.
 - Get familiar with Kiro: state the difference between Vibe and Spec modes, the components of an Agent Hook, and the basic Kiro CLI commands.
 - Understand cost optimization: list the 8 cost optimization principles and the 4 AWS Support plans, and know how to set AWS Budgets alerts at the forecasted level as well.
 - Understand the draw.io architecture drawing conventions well enough to redraw the 2-Availability-Zone VPC diagram on my own and export it to an XML file without rewatching the video.
 - Understand the 8-step process for writing a workshop and how to build the site with Hugo and the Learn theme, running at `https://kina2711.github.io/workshop-practice/`.
+
 ### Tasks carried out
+
 - Watch the video Prologue: Know before you join First Cloud AI Journey.
 - Watch the video Guide to drawing AWS architecture on draw.io.
 - Watch the video Module 01-01 - Introduction to AWS.
@@ -27,7 +31,9 @@ pre: " <b> 1.2.1. </b> "
 - Spec-driven development and Kiro's feature set: Kiro IDE, Kiro CLI, Agent Hook, steering file, Kiro Powers.
 - Cost optimization principles, AWS Pricing Calculator, the four AWS Support plans, AWS Well-Architected Framework.
 - draw.io architecture drawing conventions and the workshop-building process with Hugo and the Learn theme.
+
 ### Results
+
 - Able to distinguish Data Center, Availability Zone, Region, Edge Location and Local Zone; understand the recommendation to deploy across at least 2 Availability Zones and the significance of fault isolation between AZs.
 - Understand the difference between the root user and an IAM user when signing in to the Management Console; signing in as an IAM user requires the 12-digit Account ID or the account alias.
 - Understand the three entry points to AWS services: the Console uses a password, the CLI and SDK use an access key together with a secret access key, and all three send requests to the AWS Services Endpoint.
@@ -35,10 +41,16 @@ pre: " <b> 1.2.1. </b> "
 - Understand the cost optimization directions: choosing configurations that closely match needs, Reserved, Savings Plans and Spot, automatically shutting down resources, serverless or fully managed, AWS Budgets combined with cost allocation tags, AWS Pricing Calculator.
 - Understand the draw.io architecture drawing conventions: outer frame in the golden ratio 1.618, icons resized to size 60, labels with a white background, orange border `FF8000` for services and blue border `0000FF` for features, save formatted components to a Library, submit as an XML file.
 - Understand the Hugo commands `hugo version`, `hugo`, `hugo server` and the `content`, `static/images`, `public` folder conventions of the sample workshop.
+
 ### Problems & how they were solved
+
 - I opened draw.io but the left panel had no AWS icon set, and typing ALB or IAM into the shape search box returned nothing either. → It turns out that in the newer version of draw.io, this icon set is hidden in the shapes list. You have to click "More Shapes", then tick AWS2026 for the AWS icon set to appear.
+
 ### Lessons learned
+
+
 **Module 1 foundational knowledge**
+
 - Do not compare two cloud platforms 1-to-1 by CPU count and RAM capacity; performance must be tested at the application layer because AWS hardware has been customised.
 - Regions are independent of each other by default, the exception being global-scale services such as DNS. Edge Locations in Vietnam are currently in Hanoi and Ho Chi Minh City.
     - Deploying across at least 2 Availability Zones is recommended. In certification exams, always design for 2 AZs.
@@ -49,7 +61,9 @@ pre: " <b> 1.2.1. </b> "
     - For customers that need a disaster recovery plan, such as the financial sector, the primary system is placed in one Region, for example Singapore, while the Disaster Recovery system is placed in another Region, for example Malaysia.
     - Static files, videos and images that are frequently downloaded should be pushed out to the Edge Locations in Hanoi and Ho Chi Minh City via CloudFront so that users do not have to download them from Singapore every time. WAF and Route 53 are also at the Edge.
     - A Local Zone is a smaller version of an AZ, located in Vietnam and connected directly to the Singapore Region; use it when a better experience is needed and when data must reside in Vietnam to meet compliance requirements.
+
 **Management Console, AWS CLI, AWS SDK**
+
 - The root user is only used for sign-up; after that, enable MFA and put it away; daily work uses an IAM user. A leaked access key is equivalent to leaking the password to your environment.
     - In an enterprise, root credentials should be split among several holders: one person holds the phone number, one holds the email and password, one holds the hardware MFA key. The finer the split the better; ideally, seal it and never use it again.
 - Console sign-in flow:
@@ -67,7 +81,9 @@ pre: " <b> 1.2.1. </b> "
     2. Choose Support, then Support Center.
     3. Create a support case to send to the AWS team.
     4. In some cases, if you can prove that you forgot to shut down and have since shut down the practice resources, you may get a refund. The instructor only said "may", with no guarantee.
+
 **Cost optimization and AWS Support**
+
 - Cost optimization principles:
     1. Choose compute, storage and network configurations that closely match current needs and scale up only when needed; do not copy on-premises configurations, which are often over-provisioned for 3 to 5 years. You must review how each service is priced; for example, storage can be priced by capacity or by IOPS.
     2. Reserved and Savings Plans are prepaid, with a 1- or 3-year commitment in exchange for a discount; the longer the commitment, the larger the discount. Spot rents spare capacity at a low price, but AWS reclaims it immediately when needed; use it only when the application can tolerate that.
@@ -92,7 +108,9 @@ pre: " <b> 1.2.1. </b> "
     - [ ] Have installed Kiro IDE and Kiro CLI.
     - [ ] Understand all concepts, services and features of Module 1.
     - [ ] Have researched and read the AWS Well-Architected Framework documentation.
+
 **Kiro**
+
 - Choose a mode when starting:
     - Vibe: chat first, then build; suitable for exploring ideas.
     - Spec: plan first; Kiro guides you from the initial prompt to requirements, design and a task list before coding; suitable for features that need deep thinking and projects that need to be done in a structured way.
@@ -112,7 +130,9 @@ pre: " <b> 1.2.1. </b> "
     - `/tools` to view servers still pending; `kiro-cli settings mcp.initTimeout {timeout in int}` to increase the MCP server loading timeout.
 - Do not connect too many MCP servers at once because it consumes tokens, fills up the context window, is slow, gives poor results and is prone to fabricating information; use a custom agent that loads only what is needed, or Kiro Powers that activate only when needed.
 - Learners must create a Kiro Free Tier account, 50 credits per month, applicable only when signing in with a social media account. The hands-on lab Kiro Spec Driven Development, code 000180, is mandatory and covers installing Kiro, signing in to Kiro IDE, building an application with Kiro SDD, practising Kiro SDD and an introduction to Kiro CLI.
+
 **Guide to building an AWS workshop**
+
 - The 8-step workshop process:
     1. Do the lab once first: you must understand the technique, solution and architecture yourself before you can write and share.
     2. Note down what needs to be prepared or added, for example granting an IAM Role, creating policies, prerequisites.
@@ -139,63 +159,98 @@ pre: " <b> 1.2.1. </b> "
     6. Attachments are placed in a folder with the same name as the page, such as `_index.files` and `_index.vi.files`, then use the `attachments` shortcode with `title` and `pattern`, for example `{{%/*attachments title="Dockerfile" pattern="Dockerfile"/*/%}}`.
     7. Tables are created with Tables Generator: choose the Markdown tab, set the number of rows and columns in the Table menu, enter the data, click Generate, then Copy to clipboard and paste into the file.
 - Image standards: capture in Chrome with the bookmark bar turned off, keep zoom at 100%, Full HD 1920 x 1080 screen, PNG format, text on images size 18; when inserting, use `?width=90pc` for full-screen images, `?width=40pc` or `?width=50pc` for cropped images; when writing multilingual content, `config.toml` must be updated.
+
 **Guide to drawing AWS architecture with draw.io**
+
+
 **1. Prepare the tools**
+
 1. Open draw.io, create a new diagram, in the category tree choose Cloud then AWS, select any template and click Create. Doing so makes the whole AWS icon set available in the left panel. If you do not see the AWS icons, it is usually because this Cloud then AWS step was skipped.
 2. Choose a Google Drive folder to save to; all diagrams will be stored in that folder.
 3. Reduce the browser zoom to 80 to 90% for a wider workspace.
 4. The icon set in draw.io is incomplete, so download the AWS Architecture Icons for PowerPoint at `https://aws.amazon.com/vi/architecture/icons/`, extract it and open the pptx file. PowerPoint opens in Protected View; click Enable Editing if you need to edit. Each slide has a Service Icon row for the service level and a Resource Icon row for the resource or feature level; use PowerPoint's Search box to find icons, then save the ones you need as image files.
 5. Clear the template diagram completely before starting to draw: drag-select, then press Delete.
+
 **2. Drawing principles**
+
+
 **Level of detail**
+
 - Principle: before drawing, define the scale of the architecture to choose a suitable outer frame. Draw at multiple levels: the 2-tier level first, then add the detailed level afterwards. Do not cram too much information into one diagram.
 - Reason: cramming everything into one picture is "making things hard for yourself"; the picture becomes cluttered and hard to read.
 - How: CIDR and route tables go in a separate network architecture diagram; have a separate overview diagram and a separate container diagram; the overview diagram should stop at, say, the ECS level. In draw.io, put each level on a separate page, for example Page-1, Page-2, Page-3.
+
 **Outer frame in the golden ratio**
+
 - Principle: draw the AWS Cloud frame as a horizontal rectangle following the golden ratio 1.618 as closely as possible.
 - Reason: easy to put into slides or Word documents.
 - How: width equals height multiplied by 1.618, for example a height of 500 gives a width of about 809, a height of 700 gives a width of about 1132. Click the frame and set the size in the Arrange tab, under Size.
 - Common mistake: running out of space and stretching arbitrarily, which throws the frame out of proportion. When out of space, stretch the frame and then recalculate using the golden ratio. In the video, the final frame ended up at 1200 x 760 after several expansions.
+
 **Layering the Region, VPC, AZ, subnet boundaries**
+
 - Principle: groups are nested in the order AWS Cloud, Region, VPC, Availability Zone, subnet; each layer is smaller than the outer one and aligned to be balanced.
 - How: drag the groups from the AWS / Groups category in the left panel onto the canvas, in the correct order from outside to inside.
 - An Availability Zone is a physical concept, so it does not sit entirely inside the VPC but extends slightly beyond it: when drawn horizontally it extends on both sides, when drawn vertically it extends upward. After drawing one AZ, copy it to make the other AZ so they are identical.
 - Each AZ has a pair of public subnet and private subnet, aligned as symmetrically as possible.
+
 **Shared services area**
+
 - Principle: leave an empty area below the VPC for shared services that are not inside the VPC.
 - How: drag a Generic group into that area, name it Share Services, then in the Text tab change the label's Position to the left. The example in the video places IAM and Certificate Manager here.
+
 **Component placement**
+
 - Users and the Internet are placed outside the AWS Cloud frame.
 - The public load balancer is placed level with the public subnet or slightly above, but must be attached to the public subnet because the ALB only works when there is a public subnet.
 - In the video's example: two EC2 Web/App instances are in the two public subnets; the Primary DB is in the private subnet of one AZ, the Standby DB is in the private subnet of the other AZ. If a subnet is too small to fit the icon, enlarge the subnet.
+
 **Data flow direction and connectors**
+
 - Principle: use arrows to show the flow of requests.
 - How: for example, draw arrows from the ALB distributing load to the two EC2 Web/App instances, and from Web/App to the Primary DB; after drawing, realign the arrows.
 - Common mistake: arrows running over label text; for the fix, see the labels section below.
+
+
 **Icon size**
+
 - Principle: resize all icons to size 60.
 - Reason: when there is a central drawing repository and everyone follows the same principle, it is easy to find, share and edit each other's diagrams. Default icons dragged out are usually too large for what is needed.
 - How: click the icon, go to the Arrange tab, set Size to 60.
+
 **Component labels**
+
 - Principle: labels must have a white background and no extra whitespace.
 - Reason: without a background, text is hidden by arrows or group boundaries; extra whitespace makes the text messy.
 - How: select the label, go to the Text tab, set Background Color to white; trim leading and trailing whitespace from the name.
+
 **Colors**
+
 - Principle: label borders are distinguished by type.
     - Services such as EC2, RDS, IAM, Kinesis use an orange Border Color `FF8000`.
     - Sub-features use a blue Border Color `0000FF`, for example Application Load Balancer is a feature of Elastic Load Balancing.
 - How: select the label and set Border Color in the Text tab.
+
+
 **Correct icon generation and correct source**
+
 - Principle: do not mix old-generation icons with new-generation icons in the same picture.
 - How: searching "ec2" in draw.io returns the old-generation icon; EC2 must be taken from the AWS / Compute group. Missing icons are taken from the AWS PowerPoint file.
 - Common mistake: copying architecture images from the internet and piecing them into a proposal. Each source has a different icon style, so the picture becomes patchy with no consistent style, and customers find it very unpleasant to look at.
+
 **Alignment and spacing**
+
 - Principle: group layers and AZs must be balanced and symmetrical.
 - How: align by hand while dragging, and draw.io also suggests alignment when dragging components; draw one AZ and copy it so both sides are identical; use the Arrange tab to set exact sizes.
+
+
 **Consistency when working in a team**
+
 - Principle: when working in a team, agree on drawing style and formatting, and have a shared repository that everyone can access to view and edit.
 - How: save formatted components to a Library, submit diagrams as XML to the shared repository.
+
 **3. Step-by-step diagram building process**
+
 1. Define requirements: what the diagram is for, overview or detailed level, and how large the scale is. The example in the video is a 2-tier web application: users on the Internet reach the ALB, which distributes load to 2 EC2 Web/App instances, which connect to the Primary and Standby databases, along with shared IAM and Certificate Manager. 
 2. Choose components and find icons:
         - Group: AWS / Groups.
@@ -210,23 +265,31 @@ pre: " <b> 1.2.1. </b> "
 5. Connect: draw arrows from the ALB to the two EC2 instances and from Web/App to the Primary DB, then realign the arrows.
 6. Label: name each component, white background, orange or blue border by type, trim extra whitespace. For a detailed diagram, add CIDR and the VPC name.
 7. Do a final check using the checklist in section 7.
+
 **4. Working around the tool's limitations**
+
 - The shape search box is very poor; typing ALB, ELB, IAM often returns nothing; you have to open each group manually as listed in step 2.
 - When a large group overlaps and you cannot click the object underneath: select the overlapping object and press Cmd or Ctrl + Shift + B to Send to Back; each press moves it back one layer, so press several times to send it all the way back.
 - Performing an action with no object selected shows the error "Nothing is selected".
 - Icons added from image files are always very large because they are original icons to preserve quality; you must resize them to 60 and format them like the other icons.
+
 **5. Library for reuse**
+
 1. Create one via File > New Library > Google Drive, with a name such as My-AWS.
 2. Open it via File > Open Library, choose My-AWS, then Select. The Library appears as a separate section in the left panel and the file `My-AWS.xml` is stored in Google Drive.
 3. Only drag fully formatted components into the Library; you can drag-select a whole cluster such as VPC, subnet, Web/App, DB, selecting at whatever level you want to save.
 4. For missing icons, click the plus sign or pencil on the Library, add an image, drag in the image file saved from PowerPoint; then drag the icon out, resize to 60, name it, apply the border convention, drag the formatted version into the Library, delete the unformatted version and save.
 5. Once the Library has enough items, you no longer need to dig through hundreds of icons; for a new customer, just drag out the basic architecture and modify it, adding CIDR and the VPC name for a detailed diagram.
+
 **6. Exporting and submitting**
+
 1. Export an image via File > Export as > PNG; enabling Transparent Background keeps only the components, disabling it gives a white background. PDF export is possible; Visio export works but does not look good.
 2. Submit and share via File > Export as > XML, choose All Pages, set a name, then Download as a `.xml` file.
 3. Verify via File > Import from > Device, opening the `.xml` file; the diagram must reappear with all pages as in the original.
 4. The video's exercise: choose any AWS architecture from the internet, redraw it following exactly this set of conventions, then submit the XML file to contribute to the shared architecture repository.
+
 **7. Final diagram checklist**
+
 - [ ] The diagram is at exactly one level of detail, with no CIDR or route tables crammed into the overview diagram.
 - [ ] The AWS Cloud frame is horizontal, close to the 1.618 ratio.
 - [ ] Groups are nested in the correct order AWS Cloud, Region, VPC, AZ, subnet; AZs extend beyond the VPC; the two AZs are identical.
@@ -237,7 +300,9 @@ pre: " <b> 1.2.1. </b> "
 - [ ] All icons are size 60 and of the same icon generation.
 - [ ] All labels have a white background, no extra whitespace, orange border `FF8000` for services, blue `0000FF` for features.
 - [ ] Exported XML with All Pages and re-imported to confirm all pages are present.
+
 **Tips from the programme's Prologue**
+
 - Two project evaluation criteria: correctness, meaning it actually runs; and whether you are truly proud enough to show off the product and put it in your profile and CV. The project does not need to be very large; what matters is progress and continuous improvement.
 - How to find and do a project:
     1. Choose a career direction; for example, if you want to be a data engineer, do a project building a data platform on AWS.
@@ -254,7 +319,9 @@ pre: " <b> 1.2.1. </b> "
     - [ ] Follow the `awsstudygroup.com` site.
     - [ ] Follow the Study Group's two YouTube channels: the theory channel and the hands-on channel.
 - Look up hands-on labs by code: type the lab number, add a dot and `awsstudygroup.com`. Each module has mandatory labs; the labs on the main page are optional.
+
 ### References
+
 * <https://www.youtube.com/watch?v=95quNuhvMT0>
 * <https://www.youtube.com/watch?v=Gz56QzLQ_Yo>
 * <https://www.youtube.com/watch?v=UIw8UxGZCHA>
@@ -265,18 +332,33 @@ pre: " <b> 1.2.1. </b> "
 * <https://aws.amazon.com/vi/architecture/icons/>
 * <https://calculator.aws/#/>
 * <https://docs.aws.amazon.com/wellarchitected/>
+
 ### Evidence:
+
 ![Watch the video Guide to drawing AWS architecture on draw.io: building a VPC diagram with public and private subnets across 2 Availability Zones](/images/1-worklog/1.2-week2/1.2.1-day1/evd-0004.png)
+
 *Watch the video Guide to drawing AWS architecture on draw.io: building a VPC diagram with public and private subnets across 2 Availability Zones*
+
 ![Watch the video Guide to building an AWS workshop: the part on installing Hugo and the Learn theme](/images/1-worklog/1.2-week2/1.2.1-day1/evd-0005.png)
+
 *Watch the video Guide to building an AWS workshop: the part on installing Hugo and the Learn theme*
+
 ![Watch the video Module 01-01 - Introduction to AWS](/images/1-worklog/1.2-week2/1.2.1-day1/evd-0006.png)
+
 *Watch the video Module 01-01 - Introduction to AWS*
+
 ![Watch the video Module 01-02 Management Console: signing in as root user or IAM user](/images/1-worklog/1.2-week2/1.2.1-day1/evd-0007.png)
+
 *Watch the video Module 01-02 Management Console: signing in as root user or IAM user*
+
 ![Watch the video Module 01-03 Gen AI on AWS - Kiro](/images/1-worklog/1.2-week2/1.2.1-day1/evd-0008.png)
+
 *Watch the video Module 01-03 Gen AI on AWS - Kiro*
+
 ![Watch the video Module 01-04 Cost optimization on AWS: checklist before moving on to the next module](/images/1-worklog/1.2-week2/1.2.1-day1/evd-0009.png)
+
 *Watch the video Module 01-04 Cost optimization on AWS: checklist before moving on to the next module*
+
 ![Issue: AWS icon set hidden in draw.io](/images/1-worklog/1.2-week2/1.2.1-day1/evd-0010.png)
+
 *Issue: AWS icon set hidden in draw.io*
