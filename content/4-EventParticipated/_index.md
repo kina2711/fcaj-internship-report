@@ -11,7 +11,11 @@ The events I took part in during my internship.
 <!-- report-sections:start -->
 ### [Event 1](4.1-event1/)
 
-**Time:** Saturday, 26/09/2026, 09:00 - 12:00
+**Event Name:** Buildrathon Kickoff: Code the Future with CMC Global
 
-**Role:** Attendee, member of the Xóm Data team competing in FCAJ Buildrathon 2026
+**Date & Time:** 09:00, September 26, 2026
+
+**Location:** AWS Vietnam office, 26th floor, Bitexco Financial Tower, Ho Chi Minh City
+
+**Role:** Attendee
 <!-- report-sections:end -->
