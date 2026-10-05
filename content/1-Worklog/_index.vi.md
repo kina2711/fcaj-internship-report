@@ -10,4 +10,6 @@ Worklog này ghi lại quá trình thực tập tại First Cloud AI Journey the
 
 <!-- report-sections:start -->
 **Tuần 1:** [Học 3 phần đầu lab Create new AWS Account; tài khoản AWS bị đóng nên chưa thực hành được](1.1-week1/)
+
+**Tuần 2:** [Tuần 2 (đang thực hiện)](1.2-week2/)
 <!-- report-sections:end -->

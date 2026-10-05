@@ -10,4 +10,6 @@ This worklog records my internship with First Cloud AI Journey day by day. Each 
 
 <!-- report-sections:start -->
 **Week 1:** [Studied the first 3 sections of the lab Create new AWS Account; the AWS account was closed so I could not practise yet](1.1-week1/)
+
+**Week 2:** [Week 2 (in progress)](1.2-week2/)
 <!-- report-sections:end -->

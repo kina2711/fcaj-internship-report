@@ -9,6 +9,8 @@ theme = "hugo-theme-learn"
 home = ["HTML", "RSS", "JSON"]
 
 [params]
+  # no copy icon after every inline `code` (it cluttered worklog pages)
+  disableInlineCopyToClipBoard = true
   themeVariant = "workshop"
   editURL = "https://github.com/kina2711/fcaj-internship-report/edit/main/content/"
   description = "FCAJ internship report"
