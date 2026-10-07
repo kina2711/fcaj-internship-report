@@ -5,13 +5,17 @@ weight: 2
 chapter: false
 pre: " <b> 1.2.2. </b> "
 ---
+
 ### Mục tiêu
+
 - Xem hết 6 bài giảng Module 01 và video FCAJ Community Day, bài nào cũng có ghi chú riêng.
 - Nói lại được định nghĩa điện toán đám mây theo AWS, 4 lợi ích chính và 3 điểm làm AWS khác biệt.
 - Vẽ lại được 4 tầng hạ tầng toàn cầu của AWS (trung tâm dữ liệu, Availability Zone, Region, Edge Location) và nêu được 3 tiêu chí chọn Region.
 - Phân biệt được 3 cách làm việc với AWS (Management Console, AWS CLI, AWS SDK): mỗi cách xác thực bằng gì và ai là người gọi.
 - Kể ra được 8 biện pháp tối ưu chi phí, 3 phương thức thanh toán, 4 gói AWS Support và gói tối thiểu nên dùng cho môi trường chạy thật.
+
 ### Công việc đã thực hiện
+
 - Xem bài giảng: Module 01-01 - Điện Toán Đám Mây Là Gì ?
 - Xem bài giảng: Module 01-02 - Điều Gì Tạo Nên Sự Khác Biệt Của AWS ?
 - Xem bài giảng: Module 01-03 - Bắt Đầu Hành Trình Lên Mây Như Thế Nào
@@ -53,21 +57,29 @@ pre: " <b> 1.2.2. </b> "
     - Gói giá cố định của Amazon CloudFront: mỗi bản phân phối trả một mức cố định hằng tháng, đã gồm WAF, chống DDoS, Route 53 và CloudWatch, nên hóa đơn không tăng đột biến. Hiện phải bật gói này thủ công trên Console.
     - Tính bất định của LLM: đặt temperature = 0 vẫn chưa chắc ra cùng kết quả, do phép tính số thực trên GPU và do nhà cung cấp gộp nhiều yêu cầu vào một lô. Muốn giảm thì có thể chạy nhiều lần rồi lấy kết quả chiếm đa số, tự vận hành mô hình, ép đầu ra có cấu trúc, và thiết kế hệ thống chấp nhận sai khác ngay từ đầu.
     - Hệ thống nhiều tác tử cho bài toán chấm điểm tín dụng startup: một tác tử quản lý điều phối 5 tác tử chuyên môn (tài chính, thị trường, đội ngũ, rủi ro, tuân thủ).
+
 ### Kết quả
+
 - Nói lại được định nghĩa điện toán đám mây theo AWS: cung cấp tài nguyên CNTT theo nhu cầu qua Internet và trả tiền theo mức sử dụng. Kể được 4 lợi ích, kèm ví dụ so với hạ tầng tại chỗ như tắt máy chủ buổi tối hay nâng từ 4 lên 8 CPU.
 - Phân biệt được 4 tầng hạ tầng. Một Availability Zone có một hoặc nhiều trung tâm dữ liệu, các AZ cách ly sự cố với nhau và nối với nhau bằng đường truyền riêng tốc độ cao. Một Region có ít nhất 3 AZ, và dữ liệu mặc định nằm ở Region nơi nó được tạo. Edge Location chạy Amazon CloudFront, AWS WAF và Amazon Route 53. Việt Nam đã có 2 điểm, ở Hà Nội và TP. Hồ Chí Minh.
 - Hiểu 3 cách làm việc với AWS: Console xác thực bằng mật khẩu, AWS CLI xác thực bằng access key và secret access key, còn AWS SDK cũng dùng cặp khóa đó nhưng người gọi là ứng dụng. Cả 3 cách đều gửi API request tới AWS Services Endpoint.
 - Kể được 8 biện pháp tối ưu chi phí, cách dùng AWS Pricing Calculator và 4 gói AWS Support: Basic để khám phá, Developer cho phát triển và kiểm thử, Business cho môi trường chạy thật, Enterprise cho tập đoàn lớn.
+
 ### Khó khăn & cách xử lý
+
 - Mình chưa phân biệt được Reserved Instance với Savings Plan, vì bài chỉ nói cả hai đều được giảm giá khi cam kết dùng 1 hoặc 3 năm. → Mình đọc trang tài liệu AWS về Savings Plans. Savings Plan cam kết theo số tiền mỗi giờ nên linh hoạt hơn Reserved Instance, vốn gắn với một loại instance cụ thể.
+
 ### Bài học rút ra
+
 - Root user chỉ dùng để đăng ký tài khoản và thiết lập bảo mật, ví dụ bật MFA, xong thì nên đăng xuất và dùng IAM user cho việc hằng ngày. Đăng nhập bằng IAM user phải nhập thêm Account ID 12 chữ số (hoặc bí danh tài khoản).
 - Muốn sẵn sàng cao thì nên triển khai trên ít nhất 2 AZ. Cách này gần giống mô hình hai trung tâm dữ liệu chạy song song ở hạ tầng truyền thống, chỉ khác là mình không phải tự trả tiền đường truyền tốc độ cao. Môi trường phát triển hoặc kiểm thử thì chạy 1 AZ kèm sao lưu là đủ.
 - On-demand là cơ chế mặc định và cũng đắt nhất. Reserved Instance hoặc Savings Plan được giảm giá khi cam kết 1 hoặc 3 năm, cam kết càng lâu giảm càng nhiều. Spot giảm tới 90% nhưng có thể bị thu hồi bất cứ lúc nào, nên có thể kết hợp với Savings Plan, ví dụ có 10 máy chủ thì 4 máy chạy Savings Plan, số còn lại chạy Spot. 
 - Thiết kế kiến trúc ảnh hưởng tới chi phí nhiều nhất. Truy vấn hay kiến trúc kém làm hệ thống chậm, buộc phải nâng cấu hình, và khi đó chiết khấu cũng không bù lại được. 
 - AWS Budgets dùng để đặt ngưỡng cảnh báo, ví dụ báo khi đã tiêu 10 USD hoặc khi chi phí dự kiến cuối tháng chạm 100 USD. Budgets còn kích hoạt được hành động, như tắt máy chủ khi vượt ngưỡng. Với cost allocation tag thì phải gắn tag lên tài nguyên và bật tính năng này mới tách được chi phí theo phòng ban hoặc ứng dụng.
 - Từ gói Developer trở lên mới gửi được câu hỏi kỹ thuật cho AWS Support. Môi trường chạy thật nên dùng ít nhất gói Business. Gặp sự cố gấp thì có thể nâng gói trong thời gian ngắn, nhưng không nên làm thường xuyên.
+
 ### Tài liệu tham khảo
+
 * <https://www.youtube.com/watch?v=2PQYqH_HkXw>
 * <https://www.youtube.com/watch?v=HSzrWGqo3ME>
 * <https://www.youtube.com/watch?v=HxYZAK1coOI>
@@ -75,18 +87,33 @@ pre: " <b> 1.2.2. </b> "
 * <https://www.youtube.com/watch?v=IY61YlmXQe8>
 * <https://www.youtube.com/watch?v=XjMCrcDRACQ>
 * <https://www.youtube.com/watch?v=pjr5a-HYAjI>
+
 ### Hình ảnh minh chứng:
+
 ![Video YouTube "23-05-2026 | FCAJ Community Day" (kênh AWS Study Group): diễn giả Tinh Truong (Platform Engineer, GoTymeX) trình bày slide "Context Is Everything: Making AI Actually Work for You".](/images/1-worklog/1.2-week2/1.2.2-day2/evd-0011.png)
+
 *Video YouTube "23-05-2026 | FCAJ Community Day" (kênh AWS Study Group): diễn giả Tinh Truong (Platform Engineer, GoTymeX) trình bày slide "Context Is Everything: Making AI Actually Work for You".*
+
 ![Video "Module 01-01 - Điện Toán Đám Mây Là Gì ?" (AWS Study Group), slide "Điện toán đám mây là gì ?" với định nghĩa: phân phối tài nguyên CNTT theo nhu cầu qua Internet với chính sách thanh toán theo mức sử dụng.](/images/1-worklog/1.2-week2/1.2.2-day2/evd-0012.png)
+
 *Video "Module 01-01 - Điện Toán Đám Mây Là Gì ?" (AWS Study Group), slide "Điện toán đám mây là gì ?" với định nghĩa: phân phối tài nguyên CNTT theo nhu cầu qua Internet với chính sách thanh toán theo mức sử dụng.*
+
 ![Video "Module 01-02 - Điều Gì Tạo Nên Sự Khác Biệt Của AWS ?" (AWS Study Group), slide tiêu đề "AWS, điều gì tạo nên sự khác biệt ?".](/images/1-worklog/1.2-week2/1.2.2-day2/evd-0013.png)
+
 *Video "Module 01-02 - Điều Gì Tạo Nên Sự Khác Biệt Của AWS ?" (AWS Study Group), slide tiêu đề "AWS, điều gì tạo nên sự khác biệt ?".*
+
 ![Video "Module 01-03 - Bắt Đầu Hành Trình Lên Mây Như Thế Nào" (AWS Study Group), slide liệt kê nhà cung cấp khóa học AWS bên thứ 3 (udemy.com, cloudguru.com) và lộ trình học AWS (aws.amazon.com/vi/training/learning-paths).](/images/1-worklog/1.2-week2/1.2.2-day2/evd-0014.png)
+
 *Video "Module 01-03 - Bắt Đầu Hành Trình Lên Mây Như Thế Nào" (AWS Study Group), slide liệt kê nhà cung cấp khóa học AWS bên thứ 3 (udemy.com, cloudguru.com) và lộ trình học AWS (aws.amazon.com/vi/training/learning-paths).*
+
 ![Video "Module 01-04 - Hạ Tầng Toàn Cầu Của AWS" (AWS Study Group), slide "Availability Zone": AZ gồm một hoặc nhiều trung tâm dữ liệu, fault isolation, kết nối riêng tốc độ cao giữa các AZ, khuyến nghị triển khai tối thiểu trên 2 AZ.](/images/1-worklog/1.2-week2/1.2.2-day2/evd-0015.png)
+
 *Video "Module 01-04 - Hạ Tầng Toàn Cầu Của AWS" (AWS Study Group), slide "Availability Zone": AZ gồm một hoặc nhiều trung tâm dữ liệu, fault isolation, kết nối riêng tốc độ cao giữa các AZ, khuyến nghị triển khai tối thiểu trên 2 AZ.*
+
 ![Video "Module 01-05 - Công Cụ Quản Lý AWS Services" (AWS Study Group), slide "AWS Command Line Interface (CLI)" kèm sơ đồ User truy cập AWS Services Endpoint qua Management Console (Passwords) và AWS CLI (Access key / Secret Access key).](/images/1-worklog/1.2-week2/1.2.2-day2/evd-0016.png)
+
 *Video "Module 01-05 - Công Cụ Quản Lý AWS Services" (AWS Study Group), slide "AWS Command Line Interface (CLI)" kèm sơ đồ User truy cập AWS Services Endpoint qua Management Console (Passwords) và AWS CLI (Access key / Secret Access key).*
+
 ![Video "Module 01-06 - Tối Ưu Hóa Chi Phí Trên AWS và Làm Việc Với AWS Support" (AWS Study Group), slide "Làm việc với AWS Support" liệt kê 4 gói hỗ trợ: Basic, Developer, Business, Enterprise và việc có thể nâng cấp gói hỗ trợ trong thời gian ngắn.](/images/1-worklog/1.2-week2/1.2.2-day2/evd-0017.png)
+
 *Video "Module 01-06 - Tối Ưu Hóa Chi Phí Trên AWS và Làm Việc Với AWS Support" (AWS Study Group), slide "Làm việc với AWS Support" liệt kê 4 gói hỗ trợ: Basic, Developer, Business, Enterprise và việc có thể nâng cấp gói hỗ trợ trong thời gian ngắn.*

@@ -45,3 +45,15 @@ Tuần đang diễn ra: mỗi ngày được ghi ngay khi hoàn thành. Bản t�
 * **FCAJ Community Day:**
 
 [Xem chi tiết](1.2.2-day2/) · Nguồn: <https://www.youtube.com/watch?v=2PQYqH_HkXw>, <https://www.youtube.com/watch?v=HSzrWGqo3ME>, <https://www.youtube.com/watch?v=HxYZAK1coOI>, <https://www.youtube.com/watch?v=IK59Zdd1poE>
+
+## Ngày 3 - 07/10/2026
+
+* Bài thực hành CloudJourney 000001 - Creating Your First AWS Account
+* Bài thực hành CloudJourney 000007 - Managing Costs with AWS Budgets
+* Bài thực hành CloudJourney 000009 - Getting Help with AWS Support
+* Các nhiệm vụ nhận credit và những thứ dễ làm hao credit cần tránh
+* Các kiến trúc mẫu dùng 200$ credit, cách theo dõi và tối ưu chi phí, lộ trình học AWS 6 tháng
+* Các loại ngân sách trong AWS Budgets và cách dọn dẹp sau khi làm xong bài
+* Các gói AWS Support, các loại yêu cầu hỗ trợ và các mức độ nghiêm trọng
+
+[Xem chi tiết](1.2.3-day3/) · Nguồn: <https://000001.awsstudygroup.com/>, <https://000007.awsstudygroup.com/>, <https://000009.awsstudygroup.com/>, <https://docs.aws.amazon.com/cost-management/latest/userguide/budgets-managing-costs.html>
