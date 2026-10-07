@@ -18,4 +18,16 @@ Các sự kiện tôi đã tham gia trong thời gian thực tập.
 **Địa điểm:** Văn phòng AWS Việt Nam, tầng 26 Bitexco Financial Tower, TP.HCM
 
 **Vai trò:** Người tham dự
+
+---
+
+### [Event 2](4.2-event2/)
+
+**Tên sự kiện:** Fireside chat with Dr. Werner: Navigating the future of cloud & AI in Vietnam
+
+**Thời gian:** 02/10/2026
+
+**Địa điểm:** Bitexco Finance Tower, 2 Đ. Hải Triều, Sài Gòn, Hồ Chí Minh, Việt Nam
+
+**Vai trò:** Người tham dự
 <!-- report-sections:end -->
