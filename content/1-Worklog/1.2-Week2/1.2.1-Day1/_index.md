@@ -242,7 +242,7 @@ pre: " <b> 1.2.1. </b> "
 
 - Principle: the group layers and the AZs must be balanced and symmetrical.
 - How to: align by hand while dragging, and draw.io also suggests alignment automatically when you drag components; draw one AZ, then copy it so both sides are identical; use the Arrange tab to set exact dimensions.
-
+- Specific distance measurements between the components are not yet available in the source.
 
 **Consistency when working in a team**
 
