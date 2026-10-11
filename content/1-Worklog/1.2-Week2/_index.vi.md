@@ -6,54 +6,27 @@ chapter: false
 pre: " <b> 1.2. </b> "
 ---
 
-Tuần đang diễn ra: mỗi ngày được ghi ngay khi hoàn thành. Bản tổng kết tuần được viết sau Chủ nhật.
+### Mục tiêu tuần 2:
 
-## Ngày 1 - 05/10/2026
+* Nắm luật chơi First Cloud AI Journey (6 nguyên tắc, tốt nghiệp 5 project, mốc 6 tháng, checklist trước Module 1), quy ước vẽ kiến trúc trên draw.io và quy trình làm workshop bằng Hugo.
+* Học phần nền Module 1: định nghĩa và lợi ích của điện toán đám mây, hạ tầng toàn cầu AWS, 3 cách làm việc với AWS (Management Console, AWS CLI, AWS SDK) và cách làm quen Kiro.
+* Nắm cách tối ưu chi phí: 8 biện pháp, các phương thức thanh toán, AWS Budgets có ngưỡng dự báo, AWS Pricing Calculator và 4 gói AWS Support.
+* Làm xong 3 bài thực hành CloudJourney: 000001 Creating Your First AWS Account, 000007 Managing Costs with AWS Budgets, 000009 Getting Help with AWS Support.
 
-* Xem video Prologue: Know before you join First Cloud AI Journey.
-* Xem video Hướng dẫn vẽ kiến trúc AWS trên draw.io.
-* Xem video Module 01-01 - Introduction to AWS.
-* Xem video Hướng dẫn làm workshop AWS.
-* Xem video Module 01-02 Management Console.
-* Xem video Module 01-03 Gen AI on AWS - Kiro.
-* Xem video Module 01-04 Cost optimization on AWS.
-* Quy tắc chương trình: 6 nguyên tắc, yêu cầu tốt nghiệp 5 project, mốc thời gian 6 tháng, checklist chuẩn bị trước Module 1.
-* Khái niệm điện toán đám mây, mô hình dùng bao nhiêu trả bấy nhiêu, 4 nhóm lợi ích so với hạ tầng tại chỗ.
-* Hạ tầng toàn cầu AWS: Data Center, Availability Zone, Region, Edge Location, Local Zone.
-* Ba cách tương tác với AWS: Management Console, AWS CLI, AWS SDK và cơ chế xác thực tương ứng.
-* Phát triển theo đặc tả và bộ tính năng của Kiro: Kiro IDE, Kiro CLI, Agent Hook, steering file, Kiro Powers.
-* Nguyên tắc tối ưu chi phí, AWS Pricing Calculator, bốn gói AWS Support, AWS Well-Architected Framework.
-* Quy ước vẽ kiến trúc trên draw.io và quy trình làm workshop bằng Hugo với theme Learn.
+### Các công việc cần triển khai trong tuần này:
 
-[Xem chi tiết](1.2.1-day1/) · Nguồn: <https://www.youtube.com/watch?v=95quNuhvMT0>, <https://www.youtube.com/watch?v=Gz56QzLQ_Yo>, <https://www.youtube.com/watch?v=UIw8UxGZCHA>, <https://www.youtube.com/watch?v=l8isyDe-GwY>
+| Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
+| --- | --- | --- | --- | --- |
+| 2 | - Xem video Prologue: Know before you join First Cloud AI Journey.<br>- Xem video Hướng dẫn vẽ kiến trúc AWS trên draw.io.<br>- Xem video Module 01-01 - Introduction to AWS.<br>- Xem video Hướng dẫn làm workshop AWS.<br>- Xem video Module 01-02 Management Console.<br>- Xem video Module 01-03 Gen AI on AWS - Kiro.<br>- Xem video Module 01-04 Cost optimization on AWS.<br>- Quy tắc chương trình: 6 nguyên tắc, yêu cầu tốt nghiệp 5 project, mốc thời gian 6 tháng, checklist chuẩn bị trước Module 1.<br>- Khái niệm điện toán đám mây, mô hình dùng bao nhiêu trả bấy nhiêu, 4 nhóm lợi ích so với hạ tầng tại chỗ.<br>- Hạ tầng toàn cầu AWS: Data Center, Availability Zone, Region, Edge Location, Local Zone.<br>- Ba cách tương tác với AWS: Management Console, AWS CLI, AWS SDK và cơ chế xác thực tương ứng.<br>- Phát triển theo đặc tả và bộ tính năng của Kiro: Kiro IDE, Kiro CLI, Agent Hook, steering file, Kiro Powers.<br>- Nguyên tắc tối ưu chi phí, AWS Pricing Calculator, bốn gói AWS Support, AWS Well-Architected Framework.<br>- Quy ước vẽ kiến trúc trên draw.io và quy trình làm workshop bằng Hugo với theme Learn.<br>[Xem chi tiết](1.2.1-day1/) | 05/10/2026 | 05/10/2026 | <https://www.youtube.com/watch?v=95quNuhvMT0><br><https://www.youtube.com/watch?v=Gz56QzLQ_Yo><br><https://www.youtube.com/watch?v=UIw8UxGZCHA><br><https://www.youtube.com/watch?v=l8isyDe-GwY><br><https://www.youtube.com/watch?v=mXRqgMr_97U> |
+| 3 | - Xem bài giảng: Module 01-01 - Điện Toán Đám Mây Là Gì ?<br>- Xem bài giảng: Module 01-02 - Điều Gì Tạo Nên Sự Khác Biệt Của AWS ?<br>- Xem bài giảng: Module 01-03 - Bắt Đầu Hành Trình Lên Mây Như Thế Nào<br>- Xem bài giảng: Module 01-04 - Hạ Tầng Toàn Cầu Của AWS<br>- Xem lại video ghi hình sự kiện: 23-05-2026 | FCAJ Community Day<br>- Xem bài giảng: Module 01-05 - Công Cụ Quản Lý AWS Services<br>- Xem bài giảng: Module 01-06 - Tối Ưu Hóa Chi Phí Trên AWS và Làm Việc Với AWS Support<br>- **Module 01-01, điện toán đám mây là gì:** AWS định nghĩa điện toán đám mây là phân phối tài nguyên CNTT theo nhu cầu qua Internet, dùng bao nhiêu trả bấy nhiêu. Mình không cần tự mua, tự lắp máy chủ, thiết bị lưu trữ hay thiết bị mạng nữa, chỉ việc gửi yêu cầu kèm cấu hình mình muốn. Nhà cung cấp kiểm tra người gửi đã xác thực và có quyền chưa, tạo máy chủ ảo rồi trả lại cách kết nối. Bài nêu bốn lợi ích:<br>- **Module 01-02, điều làm AWS khác biệt:**<br>- **Module 01-03, bắt đầu hành trình lên mây:** AWS có nhiều khóa học nhất và sâu nhất, cả của AWS lẫn bên thứ ba, nên tự học hoàn toàn được. Giảng viên khuyên nên có bạn học cùng, vì các dịch vụ AWS liên quan chặt chẽ với nhau mà số dịch vụ lại tăng rất nhanh. Nên đăng ký tài khoản AWS càng sớm càng tốt và tự thử dịch vụ bằng Free Tier, thay vì chỉ học trong môi trường lab dựng sẵn. Slide có liệt kê Udemy, Cloud Guru và trang lộ trình học của AWS. Chương trình First Cloud Journey tập trung cho học viên tự xây workshop và dự án cá nhân để chứng minh năng lực với nhà tuyển dụng.<br>- **Module 01-04, hạ tầng toàn cầu:**<br>- **Module 01-05, công cụ quản lý:**<br>- **Module 01-06, chi phí và AWS Support:** Bài nêu 8 biện pháp tối ưu chi phí:<br>- **FCAJ Community Day:**<br>[Xem chi tiết](1.2.2-day2/) | 06/10/2026 | 06/10/2026 | <https://www.youtube.com/watch?v=2PQYqH_HkXw><br><https://www.youtube.com/watch?v=HSzrWGqo3ME><br><https://www.youtube.com/watch?v=HxYZAK1coOI><br><https://www.youtube.com/watch?v=IK59Zdd1poE><br><https://www.youtube.com/watch?v=IY61YlmXQe8> |
+| 4 | - Bài thực hành CloudJourney 000001 - Creating Your First AWS Account<br>- Bài thực hành CloudJourney 000007 - Managing Costs with AWS Budgets<br>- Bài thực hành CloudJourney 000009 - Getting Help with AWS Support<br>- Các nhiệm vụ nhận credit và những thứ dễ làm hao credit cần tránh<br>- Các kiến trúc mẫu dùng 200$ credit, cách theo dõi và tối ưu chi phí, lộ trình học AWS 6 tháng<br>- Các loại ngân sách trong AWS Budgets và cách dọn dẹp sau khi làm xong bài<br>- Các gói AWS Support, các loại yêu cầu hỗ trợ và các mức độ nghiêm trọng<br>[Xem chi tiết](1.2.3-day3/) | 07/10/2026 | 07/10/2026 | <https://000001.awsstudygroup.com/><br><https://000007.awsstudygroup.com/><br><https://000009.awsstudygroup.com/><br><https://docs.aws.amazon.com/cost-management/latest/userguide/budgets-managing-costs.html><br><https://000001.awsstudygroup.com/vi/6-ki%E1%BA%BFn-tr%C3%BAc-m%E1%BA%ABu-v%E1%BB%9Bi-200-credit/> |
 
-## Ngày 2 - 06/10/2026
+### Kết quả đạt được tuần 2:
 
-* Xem bài giảng: Module 01-01 - Điện Toán Đám Mây Là Gì ?
-* Xem bài giảng: Module 01-02 - Điều Gì Tạo Nên Sự Khác Biệt Của AWS ?
-* Xem bài giảng: Module 01-03 - Bắt Đầu Hành Trình Lên Mây Như Thế Nào
-* Xem bài giảng: Module 01-04 - Hạ Tầng Toàn Cầu Của AWS
-* Xem lại video ghi hình sự kiện: 23-05-2026 | FCAJ Community Day
-* Xem bài giảng: Module 01-05 - Công Cụ Quản Lý AWS Services
-* Xem bài giảng: Module 01-06 - Tối Ưu Hóa Chi Phí Trên AWS và Làm Việc Với AWS Support
-* **Module 01-01, điện toán đám mây là gì:** AWS định nghĩa điện toán đám mây là phân phối tài nguyên CNTT theo nhu cầu qua Internet, dùng bao nhiêu trả bấy nhiêu. Mình không cần tự mua, tự lắp máy chủ, thiết bị lưu trữ hay thiết bị mạng nữa, chỉ việc gửi yêu cầu kèm cấu hình mình muốn. Nhà cung cấp kiểm tra người gửi đã xác thực và có quyền chưa, tạo máy chủ ảo rồi trả lại cách kết nối. Bài nêu bốn lợi ích:
-* **Module 01-02, điều làm AWS khác biệt:**
-* **Module 01-03, bắt đầu hành trình lên mây:** AWS có nhiều khóa học nhất và sâu nhất, cả của AWS lẫn bên thứ ba, nên tự học hoàn toàn được. Giảng viên khuyên nên có bạn học cùng, vì các dịch vụ AWS liên quan chặt chẽ với nhau mà số dịch vụ lại tăng rất nhanh. Nên đăng ký tài khoản AWS càng sớm càng tốt và tự thử dịch vụ bằng Free Tier, thay vì chỉ học trong môi trường lab dựng sẵn. Slide có liệt kê Udemy, Cloud Guru và trang lộ trình học của AWS. Chương trình First Cloud Journey tập trung cho học viên tự xây workshop và dự án cá nhân để chứng minh năng lực với nhà tuyển dụng.
-* **Module 01-04, hạ tầng toàn cầu:**
-* **Module 01-05, công cụ quản lý:**
-* **Module 01-06, chi phí và AWS Support:** Bài nêu 8 biện pháp tối ưu chi phí:
-* **FCAJ Community Day:**
-
-[Xem chi tiết](1.2.2-day2/) · Nguồn: <https://www.youtube.com/watch?v=2PQYqH_HkXw>, <https://www.youtube.com/watch?v=HSzrWGqo3ME>, <https://www.youtube.com/watch?v=HxYZAK1coOI>, <https://www.youtube.com/watch?v=IK59Zdd1poE>
-
-## Ngày 3 - 07/10/2026
-
-* Bài thực hành CloudJourney 000001 - Creating Your First AWS Account
-* Bài thực hành CloudJourney 000007 - Managing Costs with AWS Budgets
-* Bài thực hành CloudJourney 000009 - Getting Help with AWS Support
-* Các nhiệm vụ nhận credit và những thứ dễ làm hao credit cần tránh
-* Các kiến trúc mẫu dùng 200$ credit, cách theo dõi và tối ưu chi phí, lộ trình học AWS 6 tháng
-* Các loại ngân sách trong AWS Budgets và cách dọn dẹp sau khi làm xong bài
-* Các gói AWS Support, các loại yêu cầu hỗ trợ và các mức độ nghiêm trọng
-
-[Xem chi tiết](1.2.3-day3/) · Nguồn: <https://000001.awsstudygroup.com/>, <https://000007.awsstudygroup.com/>, <https://000009.awsstudygroup.com/>, <https://docs.aws.amazon.com/cost-management/latest/userguide/budgets-managing-costs.html>
+* Xem hết các video Module 01, video hướng dẫn draw.io, video hướng dẫn làm workshop và bản ghi FCAJ Community Day 23-05-2026, có ghi chú cho từng bài.
+* Phân biệt được Data Center, Availability Zone, Region, Edge Location và Local Zone; nắm khuyến nghị triển khai tối thiểu 2 AZ, mỗi Region có ít nhất 3 AZ, Edge Location ở Hà Nội và TP. Hồ Chí Minh, và 3 tiêu chí chọn Region.
+* Hiểu Console xác thực bằng password, còn CLI và SDK dùng access key cùng secret access key, cả ba đều gửi yêu cầu tới AWS Services Endpoint; root user chỉ dùng để đăng ký và bật MFA, đăng nhập IAM user cần Account ID 12 chữ số hoặc account alias.
+* Nắm các tính năng của Kiro: chế độ Vibe và Spec, Agent Hook với 4 loại Event, 3 steering file `product.md`, `tech.md`, `structure.md`, Timeline Checkpointing, Property-Based Testing và các lệnh Kiro CLI cơ bản.
+* Kể được 8 biện pháp tối ưu chi phí, khác biệt giữa On-demand, Reserved Instance, Savings Plans và Spot, cách đặt ngưỡng Actual và Forecasted trong AWS Budgets, cost allocation tag, AWS Pricing Calculator và gói AWS Support phù hợp cho từng môi trường.
+* Nắm quy ước vẽ trên draw.io (khung ngoài theo tỉ lệ vàng 1.618, icon size 60, nhãn nền trắng, viền cam `FF8000` cho dịch vụ và xanh `0000FF` cho tính năng, xuất XML với All Pages), quy trình 8 bước làm workshop và các lệnh Hugo `hugo version`, `hugo`, `hugo server`.
+* Thực hành: tạo rồi xóa đủ 4 loại budget (Cost, Usage, RI, Savings Plans); gửi 1 yêu cầu hỗ trợ ở mức Hướng dẫn thông thường 24 giờ; ghi lại 5 nhiệm vụ nhận credit và các dịch vụ dễ làm hao credit như SageMaker, EC2 GPU, Redshift.

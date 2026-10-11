@@ -6,54 +6,27 @@ chapter: false
 pre: " <b> 1.2. </b> "
 ---
 
-Week in progress: each day is logged as soon as it is done. The week summary is written after Sunday.
+### Week 2 Objectives:
 
-## Day 1 - 05/10/2026
+* Learn the First Cloud AI Journey rules (6 principles, 5 projects to graduate, 6-month timeline, pre-Module 1 checklist), the draw.io architecture drawing conventions and the Hugo workshop process.
+* Learn the Module 1 foundations: what cloud computing is and its benefits, AWS global infrastructure, the 3 ways to work with AWS (Management Console, AWS CLI, AWS SDK) and getting started with Kiro.
+* Learn cost optimisation: the 8 measures, the payment options, AWS Budgets with forecasted alerts, AWS Pricing Calculator and the 4 AWS Support plans.
+* Complete 3 CloudJourney labs: 000001 Creating Your First AWS Account, 000007 Managing Costs with AWS Budgets, 000009 Getting Help with AWS Support.
 
-* Watch the video Prologue: Know before you join First Cloud AI Journey.
-* Watch the video Guide to drawing AWS architecture in draw.io.
-* Watch the video Module 01-01 - Introduction to AWS.
-* Watch the video Guide to building an AWS workshop.
-* Watch the video Module 01-02 Management Console.
-* Watch the video Module 01-03 Gen AI on AWS - Kiro.
-* Watch the video Module 01-04 Cost optimization on AWS.
-* Programme rules: 6 principles, the graduation requirement of 5 projects, the 6-month timeline, the preparation checklist before Module 1.
-* The concept of cloud computing, the pay-as-you-go model, and 4 groups of benefits compared with on-premises infrastructure.
-* AWS global infrastructure: Data Center, Availability Zone, Region, Edge Location, Local Zone.
-* Three ways to interact with AWS: Management Console, AWS CLI, AWS SDK and the corresponding authentication mechanism.
-* Spec-driven development and Kiro's feature set: Kiro IDE, Kiro CLI, Agent Hook, steering file, Kiro Powers.
-* Cost optimization principles, AWS Pricing Calculator, the four AWS Support plans, AWS Well-Architected Framework.
-* Architecture drawing conventions in draw.io and the workshop building process with Hugo using the Learn theme.
+### Tasks to be carried out this week:
 
-[Details](1.2.1-day1/) · Sources: <https://www.youtube.com/watch?v=95quNuhvMT0>, <https://www.youtube.com/watch?v=Gz56QzLQ_Yo>, <https://www.youtube.com/watch?v=UIw8UxGZCHA>, <https://www.youtube.com/watch?v=l8isyDe-GwY>
+| Day | Task | Start Date | Completion Date | Reference Material |
+| --- | --- | --- | --- | --- |
+| 2 | - Watch the video Prologue: Know before you join First Cloud AI Journey.<br>- Watch the video Guide to drawing AWS architecture in draw.io.<br>- Watch the video Module 01-01 - Introduction to AWS.<br>- Watch the video Guide to building an AWS workshop.<br>- Watch the video Module 01-02 Management Console.<br>- Watch the video Module 01-03 Gen AI on AWS - Kiro.<br>- Watch the video Module 01-04 Cost optimization on AWS.<br>- Programme rules: 6 principles, the graduation requirement of 5 projects, the 6-month timeline, the preparation checklist before Module 1.<br>- The concept of cloud computing, the pay-as-you-go model, and 4 groups of benefits compared with on-premises infrastructure.<br>- AWS global infrastructure: Data Center, Availability Zone, Region, Edge Location, Local Zone.<br>- Three ways to interact with AWS: Management Console, AWS CLI, AWS SDK and the corresponding authentication mechanism.<br>- Spec-driven development and Kiro's feature set: Kiro IDE, Kiro CLI, Agent Hook, steering file, Kiro Powers.<br>- Cost optimization principles, AWS Pricing Calculator, the four AWS Support plans, AWS Well-Architected Framework.<br>- Architecture drawing conventions in draw.io and the workshop building process with Hugo using the Learn theme.<br>[Details](1.2.1-day1/) | 10/05/2026 | 10/05/2026 | <https://www.youtube.com/watch?v=95quNuhvMT0><br><https://www.youtube.com/watch?v=Gz56QzLQ_Yo><br><https://www.youtube.com/watch?v=UIw8UxGZCHA><br><https://www.youtube.com/watch?v=l8isyDe-GwY><br><https://www.youtube.com/watch?v=mXRqgMr_97U> |
+| 3 | - Watch the lecture: Module 01-01 - What Is Cloud Computing?<br>- Watch the lecture: Module 01-02 - What Makes AWS Different?<br>- Watch the lecture: Module 01-03 - How to Start Your Journey to the Cloud<br>- Watch the lecture: Module 01-04 - AWS Global Infrastructure<br>- Rewatch the event recording: 23-05-2026 | FCAJ Community Day<br>- Watch the lecture: Module 01-05 - Tools for Managing AWS Services<br>- Watch the lecture: Module 01-06 - Cost Optimization on AWS and Working with AWS Support<br>- **Module 01-01, what is cloud computing:** AWS defines cloud computing as the on-demand delivery of IT resources over the Internet with pay-as-you-go pricing. I no longer need to buy and set up servers, storage devices or network devices myself; I just send a request with the configuration I want. The provider checks whether the sender is authenticated and authorized, creates the virtual server and returns the connection details. The lecture lists four benefits:<br>- **Module 01-02, what makes AWS different:**<br>- **Module 01-03, starting the cloud journey:** AWS has the most and the deepest courses, both from AWS and from third parties, so self-study is entirely possible. The instructor advises having study partners, because AWS services are closely interrelated and the number of services grows very quickly. You should sign up for an AWS account as early as possible and try services yourself with the Free Tier, rather than only learning in pre-built lab environments. The slides list Udemy, Cloud Guru and AWS's learning paths page. The First Cloud Journey programme focuses on learners building their own workshops and personal projects to prove their capability to employers.<br>- **Module 01-04, global infrastructure:**<br>- **Module 01-05, management tools:**<br>- **Module 01-06, costs and AWS Support:** The lecture presents 8 cost optimization measures:<br>- **FCAJ Community Day:**<br>[Details](1.2.2-day2/) | 10/06/2026 | 10/06/2026 | <https://www.youtube.com/watch?v=2PQYqH_HkXw><br><https://www.youtube.com/watch?v=HSzrWGqo3ME><br><https://www.youtube.com/watch?v=HxYZAK1coOI><br><https://www.youtube.com/watch?v=IK59Zdd1poE><br><https://www.youtube.com/watch?v=IY61YlmXQe8> |
+| 4 | - CloudJourney lab 000001 - Creating Your First AWS Account<br>- CloudJourney lab 000007 - Managing Costs with AWS Budgets<br>- CloudJourney lab 000009 - Getting Help with AWS Support<br>- Credit-earning tasks and credit-draining things to avoid<br>- Sample architectures using 200$ credit, how to monitor and optimize costs, 6-month AWS learning path<br>- Budget types in AWS Budgets and how to clean up after finishing the lab<br>- AWS Support plans, support request types and severity levels<br>[Details](1.2.3-day3/) | 10/07/2026 | 10/07/2026 | <https://000001.awsstudygroup.com/><br><https://000007.awsstudygroup.com/><br><https://000009.awsstudygroup.com/><br><https://docs.aws.amazon.com/cost-management/latest/userguide/budgets-managing-costs.html><br><https://000001.awsstudygroup.com/vi/6-ki%E1%BA%BFn-tr%C3%BAc-m%E1%BA%ABu-v%E1%BB%9Bi-200-credit/> |
 
-## Day 2 - 06/10/2026
+### Week 2 Achievements:
 
-* Watch the lecture: Module 01-01 - What Is Cloud Computing?
-* Watch the lecture: Module 01-02 - What Makes AWS Different?
-* Watch the lecture: Module 01-03 - How to Start Your Journey to the Cloud
-* Watch the lecture: Module 01-04 - AWS Global Infrastructure
-* Rewatch the event recording: 23-05-2026 | FCAJ Community Day
-* Watch the lecture: Module 01-05 - Tools for Managing AWS Services
-* Watch the lecture: Module 01-06 - Cost Optimization on AWS and Working with AWS Support
-* **Module 01-01, what is cloud computing:** AWS defines cloud computing as the on-demand delivery of IT resources over the Internet with pay-as-you-go pricing. I no longer need to buy and set up servers, storage devices or network devices myself; I just send a request with the configuration I want. The provider checks whether the sender is authenticated and authorized, creates the virtual server and returns the connection details. The lecture lists four benefits:
-* **Module 01-02, what makes AWS different:**
-* **Module 01-03, starting the cloud journey:** AWS has the most and the deepest courses, both from AWS and from third parties, so self-study is entirely possible. The instructor advises having study partners, because AWS services are closely interrelated and the number of services grows very quickly. You should sign up for an AWS account as early as possible and try services yourself with the Free Tier, rather than only learning in pre-built lab environments. The slides list Udemy, Cloud Guru and AWS's learning paths page. The First Cloud Journey programme focuses on learners building their own workshops and personal projects to prove their capability to employers.
-* **Module 01-04, global infrastructure:**
-* **Module 01-05, management tools:**
-* **Module 01-06, costs and AWS Support:** The lecture presents 8 cost optimization measures:
-* **FCAJ Community Day:**
-
-[Details](1.2.2-day2/) · Sources: <https://www.youtube.com/watch?v=2PQYqH_HkXw>, <https://www.youtube.com/watch?v=HSzrWGqo3ME>, <https://www.youtube.com/watch?v=HxYZAK1coOI>, <https://www.youtube.com/watch?v=IK59Zdd1poE>
-
-## Day 3 - 07/10/2026
-
-* CloudJourney lab 000001 - Creating Your First AWS Account
-* CloudJourney lab 000007 - Managing Costs with AWS Budgets
-* CloudJourney lab 000009 - Getting Help with AWS Support
-* Credit-earning tasks and credit-draining things to avoid
-* Sample architectures using 200$ credit, how to monitor and optimize costs, 6-month AWS learning path
-* Budget types in AWS Budgets and how to clean up after finishing the lab
-* AWS Support plans, support request types and severity levels
-
-[Details](1.2.3-day3/) · Sources: <https://000001.awsstudygroup.com/>, <https://000007.awsstudygroup.com/>, <https://000009.awsstudygroup.com/>, <https://docs.aws.amazon.com/cost-management/latest/userguide/budgets-managing-costs.html>
+* Watched all Module 01 videos, the draw.io and workshop guide videos, and the 23-05-2026 FCAJ Community Day recording, with notes for each one.
+* Can tell apart Data Center, Availability Zone, Region, Edge Location and Local Zone. Learnt that the recommendation is at least 2 AZs, that each Region has at least 3 AZs, that Vietnam has Edge Locations in Hanoi and Ho Chi Minh City, and the 3 criteria for choosing a Region.
+* Understand that the Console uses a password while the CLI and SDK use an access key plus secret access key, and that all three send requests to the AWS Services Endpoint. The root user is only for sign-up and enabling MFA, and IAM user sign-in needs the 12-digit Account ID or an account alias.
+* Learnt Kiro's features: Vibe and Spec modes, Agent Hooks with 4 event types, the 3 steering files `product.md`, `tech.md` and `structure.md`, Timeline Checkpointing, Property-Based Testing, and the basic Kiro CLI commands.
+* Can list the 8 cost-optimisation measures and explain how On-demand, Reserved Instances, Savings Plans and Spot differ. Also covered Actual vs Forecasted thresholds in AWS Budgets, cost allocation tags, AWS Pricing Calculator, and which AWS Support plan fits each environment.
+* Learnt the draw.io conventions: 1.618 golden-ratio outer frame, size-60 icons, white-background labels, orange `FF8000` borders for services and blue `0000FF` for features, and XML export with All Pages. Also learnt the 8-step workshop process and the Hugo commands `hugo version`, `hugo` and `hugo server`.
+* Labs: created and then deleted all 4 budget types (Cost, Usage, RI, Savings Plans). Submitted 1 support case at the 24-hour general guidance severity. Recorded the 5 credit-earning tasks and the services that drain credit fastest, such as SageMaker, EC2 GPU instances and Redshift.
