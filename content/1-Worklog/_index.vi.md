@@ -12,4 +12,6 @@ Worklog này ghi lại quá trình thực tập tại First Cloud AI Journey the
 **Tuần 1:** [Học 3 phần đầu lab Create new AWS Account; tài khoản AWS bị đóng nên chưa thực hành được](1.1-week1/)
 
 **Tuần 2:** [Module 1: nền tảng AWS, tối ưu chi phí, Kiro, quy ước draw.io/Hugo và các lab Budgets, Support](1.2-week2/)
+
+**Tuần 3:** [AWS CLI và SigV4, quản trị chi phí bằng IAM, đánh giá quyền IAM, STS, IMDSv2 và IAM Identity Center](1.3-week3/)
 <!-- report-sections:end -->
