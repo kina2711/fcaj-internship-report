@@ -14,4 +14,6 @@ This worklog records my internship with First Cloud AI Journey day by day. Each 
 **Week 2:** [Module 1: AWS foundations, cost optimisation, Kiro, draw.io/Hugo conventions, and the Budgets and Support labs](1.2-week2/)
 
 **Week 3:** [AWS CLI and SigV4, cost governance with IAM, IAM permission evaluation, STS, IMDSv2 and IAM Identity Center](1.3-week3/)
+
+**Week 4:** [Tag-based access control (ABAC) and permissions boundaries, encryption with AWS KMS, Secrets Manager, and boto3 for production environments](1.4-week4/)
 <!-- report-sections:end -->

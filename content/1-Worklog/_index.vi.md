@@ -14,4 +14,6 @@ Worklog này ghi lại quá trình thực tập tại First Cloud AI Journey the
 **Tuần 2:** [Module 1: nền tảng AWS, tối ưu chi phí, Kiro, quy ước draw.io/Hugo và các lab Budgets, Support](1.2-week2/)
 
 **Tuần 3:** [AWS CLI và SigV4, quản trị chi phí bằng IAM, đánh giá quyền IAM, STS, IMDSv2 và IAM Identity Center](1.3-week3/)
+
+**Tuần 4:** [Phân quyền bằng tag (ABAC) và permissions boundary, mã hóa với AWS KMS, Secrets Manager, boto3 cho môi trường production](1.4-week4/)
 <!-- report-sections:end -->
