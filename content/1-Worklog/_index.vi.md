@@ -16,4 +16,6 @@ Worklog này ghi lại quá trình thực tập tại First Cloud AI Journey the
 **Tuần 3:** [AWS CLI và SigV4, quản trị chi phí bằng IAM, đánh giá quyền IAM, STS, IMDSv2 và IAM Identity Center](1.3-week3/)
 
 **Tuần 4:** [Phân quyền bằng tag (ABAC) và permissions boundary, mã hóa với AWS KMS, Secrets Manager, boto3 cho môi trường production](1.4-week4/)
+
+**Tuần 5:** [Mạng AWS từ VPC, định tuyến, NAT, VPC Endpoint, Security Group và NACL tới Peering, Transit Gateway, Flow Logs, CloudFront, Route 53 Resolver, WAF và EC2 dòng T](1.5-week5/)
 <!-- report-sections:end -->
