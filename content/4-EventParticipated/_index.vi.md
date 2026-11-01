@@ -30,4 +30,16 @@ Các sự kiện tôi đã tham gia trong thời gian thực tập.
 **Địa điểm:** Bitexco Finance Tower, 2 Đ. Hải Triều, Sài Gòn, Hồ Chí Minh, Việt Nam
 
 **Vai trò:** Người tham dự
+
+---
+
+### [Event 3](4.3-event3/)
+
+**Tên sự kiện:** AWS First Cloud AI Journey Community Day 2026
+
+**Thời gian:** 9:00, 31/10/2026
+
+**Địa điểm:** Tầng 26, Bitexco Financial Tower, 02 Hải Triều, phường Sài Gòn, TP. Hồ Chí Minh
+
+**Vai trò:** Người tham dự
 <!-- report-sections:end -->

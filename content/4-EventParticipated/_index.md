@@ -30,4 +30,16 @@ The events I took part in during my internship.
 **Location:** Bitexco Finance Tower, 2 Đ. Hải Triều, Sài Gòn, Hồ Chí Minh, Việt Nam
 
 **Role:** Attendee
+
+---
+
+### [Event 3](4.3-event3/)
+
+**Event Name:** AWS First Cloud AI Journey Community Day 2026
+
+**Date & Time:** 9:00, October 31, 2026
+
+**Location:** Floor 26, Bitexco Financial Tower, 02 Hải Triều, Sài Gòn Ward, Ho Chi Minh City
+
+**Role:** Attendee
 <!-- report-sections:end -->
